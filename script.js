@@ -1,20 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-  darkMode();
-  menuToggle();
-  carousel();
-  intersectionIndicator();
-});
+// On page load or when changing themes, best to add inline in `head` to avoid FOUC (Flash of Unstyled Content)
+document.documentElement.classList.toggle(
+  "dark",
+  localStorage.theme === "dark" || // Check if the theme is set to dark in localStorage
+    (!("theme" in localStorage) && // If no theme is set in localStorage
+     window.matchMedia("(prefers-color-scheme: dark)").matches) // Check if the user prefers dark mode
+);
 
 // Function to toggle dark mode
 function darkMode() {
-  // On page load or when changing themes, best to add inline in `head` to avoid FOUC (Flash of Unstyled Content)
-  document.documentElement.classList.toggle(
-    "dark",
-    localStorage.theme === "dark" || // Check if the theme is set to dark in localStorage
-      (!("theme" in localStorage) && // If no theme is set in localStorage
-       window.matchMedia("(prefers-color-scheme: dark)").matches) // Check if the user prefers dark mode
-  );
-
   if (localStorage.theme === "light") {
       // Whenever the user explicitly chooses dark mode
       localStorage.theme = "dark"; // Set theme to dark in localStorage
@@ -25,6 +18,12 @@ function darkMode() {
       document.documentElement.classList.remove("dark"); // Remove dark class from the document
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  menuToggle();
+  carousel();
+  intersectionIndicator();
+});
 
 // Scroll Top functionality
 window.onscroll = () => {
