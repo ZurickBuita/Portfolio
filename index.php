@@ -94,7 +94,7 @@
 			<!-- Start Navigation -->
 			<nav class="lg:px-20 px-8 m-auto flex justify-between items-center">
 				<div class="mt-3 py-1 text-2xl text-gray-600 dark:text-gray-200">
-					<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo" />
+					<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo" loading="lazy"/>
 				</div>
 				
 				<div class="hidden lg:flex">
@@ -192,7 +192,7 @@
 							target="_blank" 
 							class="social-icon absolute top-0 left-0 block me-2 hover:scale-[1.1]"
 						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon" loading="lazy"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -201,7 +201,7 @@
 							target="_blank" 
 							class="social-icon absolute top-0 left-12 block me-2 hover:scale-[1.1]"
 						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon" loading="lazy"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -209,7 +209,7 @@
 							href="https://t.me/zurickBuita"
 							target="_blank" 
 							class="social-icon absolute top-0 left-24 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon" loading="lazy"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -217,7 +217,7 @@
 							href="https://github.com/ZurickBuita" 
 							target="_blank" 
 							class="social-icon absolute top-0 left-36 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon" loading="lazy"/>
 						</a>
 					</div>
 				</div>
@@ -231,7 +231,7 @@
 			<section id="about" class="lg:px-20 lg:pt-18 p-8 mb-2 text-center">
 				<h1 data-aos="zoom-in" class="text-4xl text-center mb-2 p-2 font-bold text-gray-700
 				dark:text-gray-200">About <span class="text-indigo-700">Me</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500" class="text-center">
+				<div data-aos="fade-in" data-aos-delay="500">
 					<p class="lg:px-20 text-gray-600 dark:text-gray-400">
 					I build modern, responsive websites and web applications focused on clean design and seamless user experiences. Experienced in frontend and backend technologies, I bring ideas to life with code and creativity.
 					</p>
@@ -247,7 +247,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/html.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/html.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -264,7 +264,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/css.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/css.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -281,7 +281,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/bootstrap.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/bootstrap.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -298,7 +298,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/tailwind.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/tailwind.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -315,7 +315,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/javascript.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/javascript.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -332,7 +332,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/php.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/php.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -349,7 +349,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/mysql.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/mysql.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -366,7 +366,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/laravel.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/laravel.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -383,7 +383,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/filament.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/filament.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -400,7 +400,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/java.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/java.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -417,7 +417,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/react.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/react.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -434,7 +434,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img class="text-center" src="img/skills/github.png" width="60" alt="logo-icon"/>
+								<img src="img/skills/github.png" width="60" alt="logo-icon" loading="lazy"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -455,7 +455,7 @@
 			<section id="projects" class="lg:px-20 lg:pt-18 p-8 mb-2">
 				<h1 data-aos="zoom-in" class="text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Featured <span class="text-indigo-700">Projects</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500" class="text-center">
+				<div data-aos="fade-in" data-aos-delay="500">
 					<p class="text-gray-600 dark:text-gray-400">
 					Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
 					</p>
@@ -464,16 +464,16 @@
 					<article data-aos="fade-in" data-aos-delay="" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/1.png" />
+								<img class="object-cover" src="img/projects/barangay/1.png" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/2.png" />
+								<img class="object-cover" src="img/projects/barangay/2.png" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/3.png" />
+								<img class="object-cover" src="img/projects/barangay/3.png" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/4.png" />
+								<img class="object-cover" src="img/projects/barangay/4.png" loading="lazy"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -486,7 +486,7 @@
 							</div>
 						</div>
 						<div class="px-6 pt-2 pb-3">
-							<div class="text-center">
+							<div>
 								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
 									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
 									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
@@ -509,7 +509,7 @@
 								</a>
 							</div>
 							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Barangay Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
 								A digital platform automating barangay workflows—resident registrations, service requests, and reporting—to enhance transparency and local governance efficiency.
 							</p>
 							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
@@ -522,16 +522,16 @@
 					<article data-aos="fade-in" data-aos-delay="100" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/1.PNG" />
+								<img class="object-cover" src="img/projects/dbms/1.PNG" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/2.PNG" />
+								<img class="object-cover" src="img/projects/dbms/2.PNG" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/3.PNG" />
+								<img class="object-cover" src="img/projects/dbms/3.PNG" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/4.PNG" />
+								<img class="object-cover" src="img/projects/dbms/4.PNG" loading="lazy"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -544,7 +544,7 @@
 							</div>
 						</div>
 						<div class="px-6 pt-4 pb-3">
-							<div class="text-center">
+							<div>
 								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
 									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
 									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
@@ -566,7 +566,7 @@
 								</a>
 							</div>
 							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bula Data Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
 								The system is a digital platform that unifies diverse data from various offices, including BFP, MDRRMO, PESO, and others, while also incorporating file attachments. This system streamlines the collection of data and ensures accessibility even after natural calamities.
 							</p>
 							
@@ -578,16 +578,16 @@
 					<article data-aos="fade-in" data-aos-delay="200" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/1.jpg" />
+								<img class="object-cover" src="img/projects/wms/1.jpg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/2.jpeg" />
+								<img class="object-cover" src="img/projects/wms/2.jpeg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/3.jpeg" />
+								<img class="object-cover" src="img/projects/wms/3.jpeg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/4.jpeg" />
+								<img class="object-cover" src="img/projects/wms/4.jpeg" loading="lazy"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -600,7 +600,7 @@
 							</div>
 						</div>
 						<div class="px-6 pt-4 pb-3">
-							<div class="text-center">
+							<div>
 								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
 									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
 									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
@@ -622,7 +622,7 @@
 								</a>
 							</div>
 							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">WMS-RFIVE</h3>
-							<p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
 								A capstone project featuring an admin panel and user interface. This system was developed to manage user data (faculty, students, technicians, and in-charges) and attendance records, which are then used for door access via RFID and fingerprints.
 							</p>
 							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
@@ -638,19 +638,19 @@
 					<article data-aos="fade-in" data-aos-delay="300" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/1.jpeg" />
+								<img class="object-cover" src="img/projects/bank/1.jpeg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/2.jpeg" />
+								<img class="object-cover" src="img/projects/bank/2.jpeg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/3.png" />
+								<img class="object-cover" src="img/projects/bank/3.png" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/4.jpeg" />
+								<img class="object-cover" src="img/projects/bank/4.jpeg" loading="lazy"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/5.png" />
+								<img class="object-cover" src="img/projects/bank/5.png" loading="lazy"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -664,14 +664,8 @@
 							</div>
 						</div>
 						<div class="px-6 pt-4 pb-3">
-							<div class="text-center">
-								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
-									  <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
-									</svg>
-									 Demo</span>
-								</a>
+							<div>
+								
 								<a 
 									href="https://github.com/ZurickBuita/Bank-Management-System.git"
 									target="_blank" 
@@ -686,7 +680,7 @@
 								</a>
 							</div>
 							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bank Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 mt-2 text-sm">
+							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
 								A digital platform that streamlines banking operations, deposits, withdrawals, fast cash, balance inquiries, and transaction history, enhancing efficiency and user experience.
 							</p>
 							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Java</span>
@@ -701,7 +695,7 @@
 			<section id="contact" class="lg:px-20 lg:pt-18 p-8 mb-2">
 				<h1 data-aos="zoom-in" class="text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Get In <span class="text-indigo-700">Touch</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500" class="text-center">
+				<div data-aos="fade-in" data-aos-delay="500">
 					<p class="text-gray-600 dark:text-gray-400">
 					Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.
 					</p>
@@ -738,7 +732,7 @@
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]"
 								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon" loading="lazy"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -747,7 +741,7 @@
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]"
 								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon" loading="lazy"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -755,7 +749,7 @@
 									href="https://t.me/zurickBuita"
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon" loading="lazy"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -763,7 +757,7 @@
 									href="https://github.com/ZurickBuita" 
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon" loading="lazy"/>
 								</a>
 							</div>
 						</div>
@@ -824,7 +818,7 @@
 
 		<!-- Start Footer -->
 		<footer class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-center p-6 border-t border-gray-200 dark:border-gray-800">
-			<span>&copy; 2025 Zurick Buita. All rights reserved.</span>
+			<span>&copy;2025 Zurick Buita. All rights reserved.</span>
 		</footer>
 		<!-- End Footer -->
 		
