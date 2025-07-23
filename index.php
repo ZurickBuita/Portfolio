@@ -34,6 +34,13 @@
 			    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
 			}
 
+			/* Hide navbar on scroll */
+			#navbar { 
+				position: sticky;
+				top: 0;
+				transition: top 1.5s ease;
+			}
+
 			/* Typewriter effect */
 			.typewriter {
 			    visibility: hidden;
@@ -75,6 +82,7 @@
 			    from { top: 0; }
 			    to { top: -5px; }
 			}
+
 			/* Intersection indicator */
 			.nav-item.active {
 	            border-bottom-color: #6366f1;
@@ -90,7 +98,7 @@
 	</head>
 	<body class="bg-white dark:bg-gray-800 font-sans">
 		<!-- Start Header -->
-		<header class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-200 sticky top-0 z-10 shadow">
+		<header id="navbar" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-200 z-10 shadow">
 			<!-- Start Navigation -->
 			<nav class="lg:px-20 px-8 m-auto flex justify-between items-center">
 				<div class="mt-3 py-1 text-2xl text-gray-600 dark:text-gray-200">
@@ -229,7 +237,7 @@
 
 			<!-- Start About Me -->
 			<section id="about" class="lg:px-20 lg:pt-18 p-8 mb-2 text-center">
-				<h1 data-aos="zoom-in" class="text-4xl text-center mb-2 p-2 font-bold text-gray-700
+				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center mb-2 p-2 font-bold text-gray-700
 				dark:text-gray-200">About <span class="text-indigo-700">Me</span></h1>
 				<div data-aos="fade-in" data-aos-delay="500">
 					<p class="lg:px-20 text-gray-600 dark:text-gray-400">
@@ -241,7 +249,7 @@
 
 			<!-- Start Skills -->
 			<section id="skills" class="lg:px-20 lg:pt-18 p-8">
-				<h1 data-aos="zoom-in" class="text-4xl text-center p-2 font-bold text-gray-700
+				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">My <span class="text-indigo-700">Skills</span></h1><br/>
 				<div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
@@ -453,10 +461,10 @@
 
 			<!-- Start Projects -->
 			<section id="projects" class="lg:px-20 lg:pt-18 p-8 mb-2">
-				<h1 data-aos="zoom-in" class="text-4xl text-center p-2 font-bold text-gray-700
+				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Featured <span class="text-indigo-700">Projects</span></h1>
 				<div data-aos="fade-in" data-aos-delay="500">
-					<p class="text-gray-600 dark:text-gray-400">
+					<p class="text-gray-600 dark:text-gray-400 text-center">
 					Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
 					</p>
 				</div>
@@ -487,7 +495,11 @@
 						</div>
 						<div class="px-6 pt-2 pb-3">
 							<div>
-								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<a 
+									href="http://barangay-management.infinityfreeapp.com/" 
+									target="_blank" 
+									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded"
+								>
 									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
 									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
 									  <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
@@ -545,13 +557,6 @@
 						</div>
 						<div class="px-6 pt-4 pb-3">
 							<div>
-								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
-									  <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
-									</svg>
-									 Demo</span>
-								</a>
 								<a 
 									href="https://github.com/ZurickBuita/OJT_project.git" 
 									target="_blank" 
@@ -601,13 +606,6 @@
 						</div>
 						<div class="px-6 pt-4 pb-3">
 							<div>
-								<a href="#" class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-									  <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z" clip-rule="evenodd" />
-									  <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z" clip-rule="evenodd" />
-									</svg>
-									 Demo</span>
-								</a>
 								<a 
 									href="https://github.com/ZurickBuita/WMS-UPDATED.git"
 									target="_blank" 
@@ -693,17 +691,17 @@
 
 			<!-- Start Contact -->
 			<section id="contact" class="lg:px-20 lg:pt-18 p-8 mb-2">
-				<h1 data-aos="zoom-in" class="text-4xl text-center p-2 font-bold text-gray-700
+				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Get In <span class="text-indigo-700">Touch</span></h1>
 				<div data-aos="fade-in" data-aos-delay="500">
-					<p class="text-gray-600 dark:text-gray-400">
+					<p class="text-gray-600 dark:text-gray-400 text-center">
 					Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.
 					</p>
 				</div>
 				<div class="mt-5 grid grid-cols-1 md:grid-cols-2">
 					<article class="ring ring-gray-800/20 dark:ring-gray-200/20">
-						<h1 class="text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Contact Information</h1>
-						<div class="px-15 pb-5">
+						<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Contact Information</h1>
+						<div class="px-5 md:px-15 pb-5">
 							<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 								  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
@@ -763,7 +761,7 @@
 						</div>
 					</article>
 					<article class="bg-gray-200 dark:bg-gray-800 ring ring-gray-800/20 dark:ring-gray-200/20">
-						<h1 class="text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Send a Message</h1>
+						<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Send a Message</h1>
 				        <form method="POST" action="send.php" class="px-5 md:px-10 lg:px-15 pb-10 flex flex-col">
 				            <input 
 				                class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500" 

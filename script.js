@@ -20,6 +20,7 @@ function darkMode() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+  hideMenuOnScroll();
   menuToggle();
   carousel();
   intersectionIndicator();
@@ -161,7 +162,10 @@ function intersectionIndicator() {
               });
               
               // Add active class to corresponding nav item
-              document.querySelector(`.nav-item[href="#${id}"]`).classList.add('active');
+              const navItem = document.querySelector(`.nav-item[href="#${id}"]`);
+              if (navItem != null) {
+                navItem.classList.add('active');
+              }
 
               if (id == 'skills') {
                   skillsAnimation();
@@ -247,3 +251,22 @@ function skillsAnimation(){
       });
   }, 50);
 } 
+
+// Hide menu on scroll
+function hideMenuOnScroll() {
+  let prevScroll = window.pageYOffset;
+  const navbar = document.getElementById('navbar');
+
+  window.onscroll = () => {
+     let currentScroll = window.pageYOffset;
+
+     if(prevScroll > currentScroll) { 
+      navbar.style.top = "0"; 
+     }
+     else { 
+      navbar.style.top = "-75px"; 
+     }
+
+     prevScroll = currentScroll;
+  };
+}
