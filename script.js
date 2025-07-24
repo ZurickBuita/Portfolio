@@ -26,11 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
   intersectionIndicator();
 });
 
-// Scroll Top functionality
-window.onscroll = () => {
-  scrollTopIndicator(); // Call the scroll indicator function on scroll
-};
-
 // Function to show/hide the scroll top indicator
 function scrollTopIndicator() {
   const scrollIndicator = document.getElementById("scrollIndicator");
@@ -258,13 +253,14 @@ function hideMenuOnScroll() {
   const navbar = document.getElementById('navbar');
 
   window.onscroll = () => {
+    scrollTopIndicator(); 
      let currentScroll = window.pageYOffset;
 
      if(prevScroll > currentScroll) { 
       navbar.style.top = "0"; 
      }
      else { 
-      navbar.style.top = "-75px"; 
+      navbar.style.top = "-" + navbar.clientHeight + "px"; 
      }
 
      prevScroll = currentScroll;

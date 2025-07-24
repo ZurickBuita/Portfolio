@@ -102,7 +102,7 @@
 			<!-- Start Navigation -->
 			<nav class="lg:px-20 px-8 m-auto flex justify-between items-center">
 				<div class="mt-3 py-1 text-2xl text-gray-600 dark:text-gray-200">
-					<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo" loading="lazy"/>
+					<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo"/>
 				</div>
 				
 				<div class="hidden lg:flex">
@@ -200,7 +200,7 @@
 							target="_blank" 
 							class="social-icon absolute top-0 left-0 block me-2 hover:scale-[1.1]"
 						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon" loading="lazy"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -209,7 +209,7 @@
 							target="_blank" 
 							class="social-icon absolute top-0 left-12 block me-2 hover:scale-[1.1]"
 						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon" loading="lazy"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -217,7 +217,7 @@
 							href="https://t.me/zurickBuita"
 							target="_blank" 
 							class="social-icon absolute top-0 left-24 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon" loading="lazy"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
 						</a>
 						<a 
 							data-aos="fade-in" 
@@ -225,7 +225,7 @@
 							href="https://github.com/ZurickBuita" 
 							target="_blank" 
 							class="social-icon absolute top-0 left-36 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon" loading="lazy"/>
+							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
 						</a>
 					</div>
 				</div>
@@ -255,7 +255,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/html.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/html.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -272,7 +272,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/css.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/css.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -289,7 +289,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/bootstrap.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/bootstrap.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -306,7 +306,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/tailwind.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/tailwind.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -323,7 +323,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/javascript.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/javascript.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -340,7 +340,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/php.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/php.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -357,7 +357,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/mysql.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/mysql.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -374,7 +374,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/laravel.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/laravel.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -391,7 +391,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/filament.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/filament.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -408,7 +408,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/java.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/java.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -425,7 +425,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/react.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/react.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -442,7 +442,7 @@
 					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="flex items-center">
 							<div class="h-14 flex items-center">
-								<img src="img/skills/github.png" width="60" alt="logo-icon" loading="lazy"/>
+								<img src="img/skills/github.png" width="60" alt="logo-icon"/>
 							</div>
 							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
 						</div>
@@ -472,16 +472,16 @@
 					<article data-aos="fade-in" data-aos-delay="" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/1.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/barangay/1.png"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/2.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/barangay/2.png"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/3.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/barangay/3.png"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/4.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/barangay/4.png"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -534,16 +534,16 @@
 					<article data-aos="fade-in" data-aos-delay="100" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/1.PNG" loading="lazy"/>
+								<img class="object-cover" src="img/projects/dbms/1.PNG"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/2.PNG" loading="lazy"/>
+								<img class="object-cover" src="img/projects/dbms/2.PNG"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/3.PNG" loading="lazy"/>
+								<img class="object-cover" src="img/projects/dbms/3.PNG"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/4.PNG" loading="lazy"/>
+								<img class="object-cover" src="img/projects/dbms/4.PNG"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -583,16 +583,16 @@
 					<article data-aos="fade-in" data-aos-delay="200" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/1.jpg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/wms/1.jpg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/2.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/wms/2.jpeg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/3.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/wms/3.jpeg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/4.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/wms/4.jpeg"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -636,19 +636,19 @@
 					<article data-aos="fade-in" data-aos-delay="300" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
 						<div class="carousel relative">
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/1.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/bank/1.jpeg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/2.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/bank/2.jpeg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/3.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/bank/3.png"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/4.jpeg" loading="lazy"/>
+								<img class="object-cover" src="img/projects/bank/4.jpeg"/>
 							</div>
 							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/5.png" loading="lazy"/>
+								<img class="object-cover" src="img/projects/bank/5.png"/>
 							</div>
 							<!-- Next and previous buttons -->
 						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
@@ -712,7 +712,7 @@
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
 								  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
 								</svg>
-								<span>&nbsp;biboybelmonte2@gmail.com</span>
+								<span>&nbsp;zurickbuita@gmail.com</span>
 							</div>
 							<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
 								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -730,7 +730,7 @@
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]"
 								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon" loading="lazy"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -739,7 +739,7 @@
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]"
 								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon" loading="lazy"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -747,7 +747,7 @@
 									href="https://t.me/zurickBuita"
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon" loading="lazy"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
 								</a>
 								<a 
 									data-aos="fade-in" 
@@ -755,7 +755,7 @@
 									href="https://github.com/ZurickBuita" 
 									target="_blank" 
 									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon" loading="lazy"/>
+									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
 								</a>
 							</div>
 						</div>
