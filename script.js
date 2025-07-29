@@ -196,15 +196,19 @@ function skillsAnimation(){
       { name: "HTML", percent: 75, level: "Intermediate" },
       { name: "CSS", percent: 75, level: "Intermediate" },
       { name: "Bootstrap", percent: 75, level: "Intermediate" },
-      { name: "Tailwind", percent: 30, level: "Beginner" },
-      { name: "JavaScript", percent: 35, level: "Beginner" },
+      { name: "Tailwind CSS", percent: 45, level: "Intermediate" },
+      { name: "JavaScript", percent: 40, level: "Intermediate" },
       { name: "PHP", percent: 75, level: "Intermediate" },
       { name: "MySQL", percent: 75, level: "Intermediate" },
       { name: "Laravel", percent: 75, level: "Intermediate" },
-      { name: "&nbsp;Laravel Filament", percent: 75, level: "Intermediate" },
-      { name: "Java", percent: 30, level: "Intermediate" },
+      { name: "Laravel Filament", percent: 75, level: "Intermediate" },
+      { name: "Java", percent: 40, level: "Intermediate" },
       { name: "React Native", percent: 30, level: "Beginner" },
-      { name: "&nbsp;GitHub", percent: 30, level: "Intermediate" }
+      { name: "Git", percent: 45, level: "Intermediate" },
+      { name: "JQuery", percent: 40, level: "Intermediate" },
+      { name: "Vue", percent: 20, level: "Beginner" },
+      { name: "C", percent: 35, level: "Beginner" },
+      { name: "C++", percent: 35, level: "Beginner" },
   ];
 
   skills.forEach((_, i) => {
@@ -219,7 +223,7 @@ function skillsAnimation(){
   // Start animations after reset completes
   setTimeout(() => {
       skills.forEach((skill, i) => {
-          names[i].innerHTML = skill.name;
+          names[i].innerHTML = "&nbsp;" + skill.name;
           levels[i].textContent = skill.level;
           
           // Enable smooth transition
