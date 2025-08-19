@@ -206,11 +206,8 @@ function skillsAnimation(){
       { name: "React Native", percent: 30, level: "Beginner" },
       { name: "Git", percent: 45, level: "Intermediate" },
       { name: "JQuery", percent: 40, level: "Intermediate" },
-      { name: "Vue", percent: 20, level: "Beginner" },
       { name: "C", percent: 35, level: "Beginner" },
-      { name: "C++", percent: 35, level: "Beginner" },
-      { name: "TypeScript", percent: 20, level: "Beginner" },
-      { name: "Angular", percent: 20, level: "Beginner" },
+      { name: "C++", percent: 35, level: "Beginner" }
   ];
 
   skills.forEach((_, i) => {
