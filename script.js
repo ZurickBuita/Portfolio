@@ -209,6 +209,7 @@ function skillsAnimation(){
       { name: "Vue", percent: 20, level: "Beginner" },
       { name: "C", percent: 35, level: "Beginner" },
       { name: "C++", percent: 35, level: "Beginner" },
+      { name: "TypeScript", percent: 20, level: "Beginner" },
   ];
 
   skills.forEach((_, i) => {
