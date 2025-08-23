@@ -203,7 +203,7 @@ function skillsAnimation(){
       { name: "Laravel", percent: 75, level: "Intermediate" },
       { name: "Laravel Filament", percent: 75, level: "Intermediate" },
       { name: "Java", percent: 40, level: "Intermediate" },
-      { name: "React Native", percent: 30, level: "Beginner" },
+      { name: "React", percent: 35, level: "Beginner" },
       { name: "Git", percent: 45, level: "Intermediate" },
       { name: "JQuery", percent: 40, level: "Intermediate" },
       { name: "C", percent: 35, level: "Beginner" },
