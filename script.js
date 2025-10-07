@@ -209,6 +209,7 @@ function skillsAnimation(){
       { name: "C", percent: 35, level: "Beginner" },
       { name: "C++", percent: 35, level: "Beginner" },
       { name: "TypeScript", percent: 20, level: "Beginner" },
+      { name: "Livewire", percent: 40, level: "Intermediate" }
   ];
 
   skills.forEach((_, i) => {
@@ -253,12 +254,12 @@ function skillsAnimation(){
 
 // Hide menu on scroll
 function hideMenuOnScroll() {
-  let prevScroll = window.pageYOffset;
+  let prevScroll = window.scrollY;
   const navbar = document.getElementById('navbar');
 
   window.onscroll = () => {
     scrollTopIndicator(); 
-     let currentScroll = window.pageYOffset;
+     let currentScroll = window.scrollY;
 
      if(prevScroll > currentScroll) { 
       navbar.style.top = "0"; 
