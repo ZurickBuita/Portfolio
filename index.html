@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="eng">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Zurick Buita Portfolio" />
-		<meta name="keywords" content="portfolio, zurick, buita" />
-		<meta name="author" content="Zurick Buita" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Portfolio</title>
-		<!-- Favicon -->
-		<link rel="icon" type="image/x-icon" href="img/logo.png">
-		<!-- AOS Animation CSS -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-		<!-- Tailwind link -->
-		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-		<style type="text/tailwindcss">
-			body * {
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="description" content="Zurick Buita Portfolio" />
+	<meta name="keywords" content="portfolio, zurick, buita" />
+	<meta name="author" content="Zurick Buita" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Portfolio</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="img/logo.png">
+	<!-- AOS Animation CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Tailwind link -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style type="text/tailwindcss">
+		body * {
 			    @apply transition-all duration-200 ease-in;
 			}
 
@@ -98,865 +99,976 @@
 	            background: oklch(45.7% 0.24 277.023);
 	        }
     	</style>
-	</head>
-	<body class="bg-white dark:bg-gray-800 font-sans">
-		<!-- Start Header -->
-		<header id="navbar" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-200 z-10 shadow">
-			<!-- Start Navigation -->
-			<nav class="lg:px-20 px-8 m-auto flex justify-between items-center">
-				<div class="mt-3 py-1 text-2xl text-gray-600 dark:text-gray-200">
-					<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo"/>
-				</div>
-				
-				<div class="hidden lg:flex">
-					<a href="#about" class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">About Me</a>
-					<a href="#skills" class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Skills</a>
-					<a href="#projects" class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Projects</a>
-					<a href="#contact" class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Contact</a>
+</head>
 
+<body class="bg-white dark:bg-gray-800 font-sans">
+	<!-- Start Header -->
+	<header id="navbar" class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-200 z-10 shadow">
+		<!-- Start Navigation -->
+		<nav class="lg:px-20 px-8 m-auto flex justify-between items-center">
+			<div class="mt-3 py-1 text-2xl text-gray-600 dark:text-gray-200">
+				<img class="inline-block w-25 bg-indigo-200" src="img/logo.png" alt="logo" />
+			</div>
+
+			<div class="hidden lg:flex">
+				<a href="#about"
+					class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">About
+					Me</a>
+				<a href="#skills"
+					class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Skills</a>
+				<a href="#projects"
+					class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Projects</a>
+				<a href="#contact"
+					class="nav-item block font-semibold mt-3 py-3 px-5 border-b-4  border-transparent hover:border-b-4 hover:border-indigo-500 duration-300 ease-in">Contact</a>
+
+				<!-- start dark mode toggle -->
+				<a onclick="darkMode()" class="block font-semibold mt-3 py-3 cursor-pointer">
+					<!-- fill="currentColor" -->
+					<div
+						class="relative w-[3.3rem] flex items-center justify-between bg-indigo-50 ring ring-gray-200 rounded-xl">
+						<div
+							class="absolute top-0 bottom-0 left-0 dark:left-7 py-3 px-[13px] bg-indigo-600 rounded-xl z-5">
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="z-5 size-6 text-gray-50 dark:text-gray-600">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+						</svg>
+
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+							stroke="currentColor" class="z-5 size-6 dark:text-gray-50 text-gray-600">
+							<path stroke-linecap="round" stroke-linejoin="round"
+								d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+						</svg>
+					</div>
+				</a>
+				<!-- end dark mode toggle -->
+			</div>
+			<!-- Mobile Menu Button - Visible on md and below -->
+			<div class="flex lg:hidden">
+				<button id="mobile-menu-button" type="button"
+					class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-100 cursor-pointer">
+
+					<!-- Menu icon -->
+					<svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+						aria-hidden="true" data-slot="icon">
+						<path stroke-linecap="round" stroke-linejoin="round"
+							d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+					</svg>
+				</button>
+			</div>
+		</nav>
+		<!-- End Navigation -->
+
+		<!-- Mobile Menu - Hidden by default -->
+		<div id="mobile-menu" class="hidden lg:hidden">
+			<div class="flex flex-col space-y-3 pb-2 text-center">
+				<div class="p-2 flex justify-center">
 					<!-- start dark mode toggle -->
 					<a onclick="darkMode()" class="block font-semibold mt-3 py-3 cursor-pointer">
 						<!-- fill="currentColor" -->
-						<div class="relative w-[3.3rem] flex items-center justify-between bg-indigo-50 ring ring-gray-200 rounded-xl">
-							<div class="absolute top-0 bottom-0 left-0 dark:left-7 py-3 px-[13px] bg-indigo-600 rounded-xl z-5"></div>
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="z-5 size-6 text-gray-50 dark:text-gray-600">
-							  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+						<div
+							class="relative w-[3.3rem] flex items-center justify-between bg-indigo-50 ring ring-gray-200 rounded-xl">
+							<div
+								class="absolute top-0 bottom-0 left-0 dark:left-7 py-3 px-[13px] bg-indigo-600 rounded-xl z-5">
+							</div>
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="z-5 size-6 text-gray-50 dark:text-gray-600">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
 							</svg>
 
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="z-5 size-6 dark:text-gray-50 text-gray-600">
-							  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="z-5 size-6 dark:text-gray-50 text-gray-600">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
 							</svg>
 						</div>
 					</a>
-					<!-- end dark mode toggle -->
 				</div>
-				<!-- Mobile Menu Button - Visible on md and below -->
-				<div class="flex lg:hidden">
-			      <button id="mobile-menu-button" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-100 cursor-pointer">
-			        
-			        <!-- Menu icon -->
-			        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-			          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-			        </svg>
-			      </button>
-			    </div>
-			</nav>
-			<!-- End Navigation -->
+				<a href="#about"
+					class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">About
+					Me</a>
+				<a href="#skills"
+					class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Skills</a>
+				<a href="#projects"
+					class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Projects</a>
+				<a href="#contact"
+					class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Contact</a>
+			</div>
+		</div>
+	</header>
+	<!-- End Header -->
 
-			 <!-- Mobile Menu - Hidden by default -->
-				<div id="mobile-menu" class="hidden lg:hidden">
-                <div class="flex flex-col space-y-3 pb-2 text-center">
-                	<div class="p-2 flex justify-center">
-	                	<!-- start dark mode toggle -->
-						<a onclick="darkMode()" class="block font-semibold mt-3 py-3 cursor-pointer">
-							<!-- fill="currentColor" -->
-							<div class="relative w-[3.3rem] flex items-center justify-between bg-indigo-50 ring ring-gray-200 rounded-xl">
-								<div class="absolute top-0 bottom-0 left-0 dark:left-7 py-3 px-[13px] bg-indigo-600 rounded-xl z-5"></div>
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="z-5 size-6 text-gray-50 dark:text-gray-600">
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-								</svg>
-
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="z-5 size-6 dark:text-gray-50 text-gray-600">
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-								</svg>
-							</div>
-						</a>
-                	</div>
-                    <a href="#about" class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">About Me</a>
-                    <a href="#skills" class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Skills</a>
-                    <a href="#projects" class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Projects</a>
-                    <a href="#contact" class="text-gray-500 dark:text-gray-200 hover:text-gray-100 transition-colors duration-300 font-medium py-2 px-4 rounded hover:bg-indigo-700">Contact</a>
-                </div>
-            </div>
-		</header>
-		<!-- End Header -->
-
-		<!-- Start Main -->
-		<main class="bg-gray-50 dark:bg-gray-900">
-			<!-- Start Hero -->
-			<section class="lg:px-20 p-8 mb-2 flex flex-col md:flex-row items-center justify-center" >
-				<div class="p-8">
-					<h1 data-aos="fade-right" class="flex items-center text-4xl text-gray-700 dark:text-white font-bold">Hi,&nbsp;<span class="inline-block typewriter">I'm Zurick Buita</span></h1>
-					<h1 data-aos="fade-right" class="text-4xl text-gray-500 dark:text-gray-300 font-bold">Web Developer</h1>
-					<a 
-						data-aos="zoom-in" 
-						data-aos-delay="100" 
-						href="img/ZurickBuita_Junior_Developer.pdf" 
-						class="mt-3 inline-block py-2 px-4 border-2 border-indigo-700 hover:bg-indigo-600 text-gray-600 hover:text-gray-100 dark:text-gray-100 rounded"
-						target="_blank" 
-					>
-						Download CV
+	<!-- Start Main -->
+	<main class="bg-gray-50 dark:bg-gray-900">
+		<!-- Start Hero -->
+		<section class="lg:px-20 p-8 mb-2 flex flex-col md:flex-row items-center justify-center">
+			<div class="p-8">
+				<h1 data-aos="fade-right" class="flex items-center text-4xl text-gray-700 dark:text-white font-bold">
+					Hi,&nbsp;<span class="inline-block typewriter">I'm Zurick Buita</span></h1>
+				<h1 data-aos="fade-right" class="text-4xl text-gray-500 dark:text-gray-300 font-bold">Web Developer</h1>
+				<a data-aos="zoom-in" data-aos-delay="100" href="img/ZurickBuita_Junior_Developer.pdf"
+					class="mt-3 inline-block py-2 px-4 border-2 border-indigo-700 hover:bg-indigo-600 text-gray-600 hover:text-gray-100 dark:text-gray-100 rounded"
+					target="_blank">
+					Download CV
+				</a>
+				<a href="#contact" data-aos="zoom-in" data-aos-delay="100"
+					class="mt-3 inline-block py-2 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded cursor-pointer">
+					Hire Me
+				</a>
+				<div class="relative flex items-center my-5">
+					<a data-aos="fade-in" data-aos-delay="100"
+						href="https://www.instagram.com/zurickbuita?igsh=dThyeGtuNzMxMnlj" target="_blank"
+						class="social-icon absolute top-0 left-0 block me-2 hover:scale-[1.1]">
+						<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png"
+							alt="logo-icon" />
 					</a>
-					<a 
-						href="#contact"
-						data-aos="zoom-in" 
-						data-aos-delay="100" 
-						class="mt-3 inline-block py-2 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded cursor-pointer">
-						Hire Me
+					<a data-aos="fade-in" data-aos-delay="200" href="https://www.facebook.com/zurick.buita"
+						target="_blank" class="social-icon absolute top-0 left-12 block me-2 hover:scale-[1.1]">
+						<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png"
+							alt="logo-icon" />
 					</a>
-					<div class="relative flex items-center my-5">
-						<a 
-							data-aos="fade-in" 
-							data-aos-delay="100" 
-							href="https://www.instagram.com/zurickbuita?igsh=dThyeGtuNzMxMnlj"
-							target="_blank" 
-							class="social-icon absolute top-0 left-0 block me-2 hover:scale-[1.1]"
-						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
-						</a>
-						<a 
-							data-aos="fade-in" 
-							data-aos-delay="200" 
-							href="https://www.facebook.com/zurick.buita" 
-							target="_blank" 
-							class="social-icon absolute top-0 left-12 block me-2 hover:scale-[1.1]"
-						>
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
-						</a>
-						<a 
-							data-aos="fade-in" 
-							data-aos-delay="300" 
-							href="https://t.me/zurickBuita"
-							target="_blank" 
-							class="social-icon absolute top-0 left-24 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
-						</a>
-						<a 
-							data-aos="fade-in" 
-							data-aos-delay="400" 
-							href="https://github.com/ZurickBuita" 
-							target="_blank" 
-							class="social-icon absolute top-0 left-36 block me-2 hover:scale-[1.1]">
-							<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
-						</a>
-					</div>
+					<a data-aos="fade-in" data-aos-delay="300" href="https://t.me/zurickBuita" target="_blank"
+						class="social-icon absolute top-0 left-24 block me-2 hover:scale-[1.1]">
+						<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png"
+							alt="logo-icon" />
+					</a>
+					<a data-aos="fade-in" data-aos-delay="400" href="https://github.com/ZurickBuita" target="_blank"
+						class="social-icon absolute top-0 left-36 block me-2 hover:scale-[1.1]">
+						<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png"
+							alt="logo-icon" />
+					</a>
 				</div>
-				<div>
-					<img data-aos="fade-left" class="fade-mask mask-b-from-70% mask-b-to-100% bg-dark drop-shadow-xl drop-shadow-indigo-700 " src="img/img.png"/>
-				</div>
-			</section>
-			<!-- End Hero -->
+			</div>
+			<div>
+				<img data-aos="fade-left"
+					class="fade-mask mask-b-from-70% mask-b-to-100% bg-dark drop-shadow-xl drop-shadow-indigo-700 "
+					src="img/img.png" />
+			</div>
+		</section>
+		<!-- End Hero -->
 
-			<!-- Start About Me -->
-			<section id="about" class="lg:px-20 lg:pt-18 p-8 mb-2 text-center">
-				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center mb-2 p-2 font-bold text-gray-700
+		<!-- Start About Me -->
+		<section id="about" class="lg:px-20 lg:pt-18 p-8 mb-2 text-center">
+			<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center mb-2 p-2 font-bold text-gray-700
 				dark:text-gray-200">About <span class="text-indigo-700">Me</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500">
-					<p class="lg:px-20 text-gray-600 dark:text-gray-400">
-					I build modern, responsive websites and web applications focused on clean design and seamless user experiences. Experienced in frontend and backend technologies, I bring ideas to life with code and creativity.
-					</p>
-				</div>
-			</section>
-			<!-- End About Me -->
+			<div data-aos="fade-in" data-aos-delay="500">
+				<p class="lg:px-20 text-gray-600 dark:text-gray-400">
+					I build modern, responsive websites and web applications focused on clean design and seamless user
+					experiences. Experienced in frontend and backend technologies, I bring ideas to life with code and
+					creativity.
+				</p>
+			</div>
+		</section>
+		<!-- End About Me -->
 
-			<!-- Start Skills -->
-			<section id="skills" class="lg:px-20 lg:pt-18 p-8">
-				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
-				dark:text-gray-200">My <span class="text-indigo-700">Skills</span></h1><br/>
-				<div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/html.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+		<!-- Start Skills -->
+		<section id="skills" class="lg:px-20 lg:pt-18 p-8">
+			<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
+				dark:text-gray-200">My <span class="text-indigo-700">Skills</span></h1><br />
+			<div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/html.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/css.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/css.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/bootstrap.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/tailwind.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/bootstrap.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/javascript.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/tailwind.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/php.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/mysql.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/javascript.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/laravel.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/php.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/filament.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/java.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/mysql.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/react.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/laravel.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/git.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/jquery.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/filament.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/c.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/java.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/c++.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/typescript.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/react.png" width="60" alt="logo-icon" />
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
 						</div>
-					</article>
-					<article class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="flex items-center">
-							<div class="h-14 flex items-center">
-								<img src="img/skills/livewire.png" width="60" alt="logo-icon"/>
-							</div>
-							<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
 						</div>
-						<div>
-							<div class="flex items-center justify-between">
-								<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
-								<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
-							</div>
-							<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
-								<div class="progress p-1 rounded"></div>
-							</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/git.png" width="60" alt="logo-icon" />
 						</div>
-					</article>
-			</section>
-			<!-- End Skills -->
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/jquery.png" width="60" alt="logo-icon" />
+						</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/c.png" width="60" alt="logo-icon" />
+						</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/c++.png" width="60" alt="logo-icon" />
+						</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/typescript.png" width="60" alt="logo-icon" />
+						</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+				<article
+					class="bg-white dark:bg-gray-800 rounded-lg px-5 py-3 ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="flex items-center">
+						<div class="h-14 flex items-center">
+							<img src="img/skills/livewire.png" width="60" alt="logo-icon" />
+						</div>
+						<h3 class="name text-gray-900 dark:text-white text-base font-medium tracking-tight"></h3>
+					</div>
+					<div>
+						<div class="flex items-center justify-between">
+							<span class="level text-gray-500 dark:text-gray-400 text-sm"></span>
+							<span class="percent text-gray-500 dark:text-gray-400 text-sm"></span>
+						</div>
+						<div class="bg-indigo-200 ring-1 ring-gray-900/5 shadow-xl rounded-xl">
+							<div class="progress p-1 rounded"></div>
+						</div>
+					</div>
+				</article>
+		</section>
+		<!-- End Skills -->
 
-			<!-- Start Projects -->
-			<section id="projects" class="lg:px-20 lg:pt-18 p-8 mb-2">
-				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
+		<!-- Start Projects -->
+		<section id="projects" class="lg:px-20 lg:pt-18 p-8 mb-2">
+			<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Featured <span class="text-indigo-700">Projects</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500">
-					<p class="text-gray-600 dark:text-gray-400 text-center">
-					Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance, and user experience.
-					</p>
-				</div>
-				<div class="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
-					<article data-aos="fade-in" data-aos-delay="" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="carousel relative">
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/mycart/orders.png"/>
+			<div data-aos="fade-in" data-aos-delay="500">
+				<p class="text-gray-600 dark:text-gray-400 text-center">
+					Here are some of my recent projects. Each project was carefully crafted with attention to detail,
+					performance, and user experience.
+				</p>
+			</div>
+			<div class="mt-5 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-4">
+				<article data-aos="fade-in" data-aos-delay=""
+					class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="carousel relative">
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/mycart/orders.png" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/mycart/cart.png" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/mycart/checkout.png" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/mycart/payment.png" />
+						</div>
+						<!-- Next and previous buttons -->
+						<a
+							class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
+						<a
+							class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
+						<div class="flex items-center justify-center pt-2">
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/mycart/cart.png"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/mycart/checkout.png"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/mycart/payment.png"/>
-							</div>
-							<!-- Next and previous buttons -->
-						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
-						    <a class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
-							<div class="flex items-center justify-center pt-2">
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
 						</div>
-						<div class="px-6 pt-2 pb-3">
-							<div>
-								<a 
-									href="https://github.com/ZurickBuita/Barangay-Management-System.git" 
-									target="_blank" 
-									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded"
-								>
-									<span class="flex items-center text-sm">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-										  <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-										  <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-										</svg>
-										Github
-									</span>
-								</a>
-							</div>
-							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Barangay Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
-								A digital platform automating barangay workflows—resident registrations, service requests, and reporting—to enhance transparency and local governance efficiency.
-							</p>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Bootstrap</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">JavaScript</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">PHP</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+					<div class="px-6 pt-2 pb-3">
+						<div>
+							<a href="https://github.com/ZurickBuita/Barangay-Management-System.git" target="_blank"
+								class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<span class="flex items-center text-sm">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+										class="size-5">
+										<path
+											d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+										<path
+											d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+									</svg>
+									Github
+								</span>
+							</a>
 						</div>
-					</article>
-					<article data-aos="fade-in" data-aos-delay="100" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="carousel relative">
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/1.png"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/2.png"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/3.png"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/barangay/4.png"/>
-							</div>
-							<!-- Next and previous buttons -->
-						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
-						    <a class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
-							<div class="flex items-center justify-center pt-2">
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-							</div>
+						<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">MyCart E-commerce
+						</h3>
+						<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
+							An e-commerce website with the title "MyCart," adopting tech stacks including
+							the Laravel framework, such as Filament and Livewire; MySQL for data storing; and Tailwind
+							CSS for styling.</p>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Laravel</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Filament</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Livewire</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Tailwind CSS</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+				</article>
+				<article data-aos="fade-in" data-aos-delay="100"
+					class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="carousel relative">
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/barangay/1.png" />
 						</div>
-						<div class="px-6 pt-2 pb-3">
-							<div>
-								<a 
-									href="https://github.com/ZurickBuita/Barangay-Management-System.git" 
-									target="_blank" 
-									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded"
-								>
-									<span class="flex items-center text-sm">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-										  <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-										  <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-										</svg>
-										Github
-									</span>
-								</a>
-							</div>
-							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Barangay Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
-								A digital platform automating barangay workflows—resident registrations, service requests, and reporting—to enhance transparency and local governance efficiency.
-							</p>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Bootstrap</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">JavaScript</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">PHP</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/barangay/2.png" />
 						</div>
-					</article>
-					<article data-aos="fade-in" data-aos-delay="200" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="carousel relative">
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/1.PNG"/>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/barangay/3.png" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/barangay/4.png" />
+						</div>
+						<!-- Next and previous buttons -->
+						<a
+							class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
+						<a
+							class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
+						<div class="flex items-center justify-center pt-2">
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/2.PNG"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/3.PNG"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/dbms/4.PNG"/>
-							</div>
-							<!-- Next and previous buttons -->
-						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
-						    <a class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
-							<div class="flex items-center justify-center pt-2">
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
 						</div>
-						<div class="px-6 pt-4 pb-3">
-							<div>
-								<a 
-									href="https://github.com/ZurickBuita/OJT_project.git" 
-									target="_blank" 
-									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-										  <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-										  <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-										</svg>
-										Github
-									</span>
-								</a>
-							</div>
-							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bula Data Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
-								The system is a digital platform that unifies diverse data from various offices, including BFP, MDRRMO, PESO, and others, while also incorporating file attachments. This system streamlines the collection of data and ensures accessibility even after natural calamities.
-							</p>
-							
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Laravel Filament</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Tailwind</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+					<div class="px-6 pt-2 pb-3">
+						<div>
+							<a href="https://github.com/ZurickBuita/Barangay-Management-System.git" target="_blank"
+								class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<span class="flex items-center text-sm">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+										class="size-5">
+										<path
+											d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+										<path
+											d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+									</svg>
+									Github
+								</span>
+							</a>
 						</div>
-					</article>
-					<article data-aos="fade-in" data-aos-delay="300" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="carousel relative">
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/1.jpg"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/2.jpeg"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/3.jpeg"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/wms/4.jpeg"/>
-							</div>
-							<!-- Next and previous buttons -->
-						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
-						    <a class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
-							<div class="flex items-center justify-center pt-2">
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-							</div>
+						<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Barangay
+							Management System</h3>
+						<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
+							A digital platform automating barangay workflows—resident registrations, service requests,
+							and reporting—to enhance transparency and local governance efficiency.
+						</p>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Bootstrap</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">JavaScript</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">PHP</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+				</article>
+				<article data-aos="fade-in" data-aos-delay="200"
+					class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="carousel relative">
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/dbms/1.PNG" />
 						</div>
-						<div class="px-6 pt-4 pb-3">
-							<div>
-								<a 
-									href="https://github.com/ZurickBuita/WMS-UPDATED.git"
-									target="_blank" 
-									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-										  <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-										  <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-										</svg>
-										Github
-									</span>
-								</a>
-							</div>
-							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">WMS-RFIVE</h3>
-							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
-								A capstone project featuring an admin panel and user interface. This system was developed to manage user data (faculty, students, technicians, and in-charges) and attendance records, which are then used for door access via RFID and fingerprints.
-							</p>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">CSS</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">JavaScript</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">PHP</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Laravel</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Bootstrap</span>
-							
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/dbms/2.PNG" />
 						</div>
-					</article>
-					<article data-aos="fade-in" data-aos-delay="400" class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
-						<div class="carousel relative">
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/1.jpeg"/>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/dbms/3.PNG" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/dbms/4.PNG" />
+						</div>
+						<!-- Next and previous buttons -->
+						<a
+							class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
+						<a
+							class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
+						<div class="flex items-center justify-center pt-2">
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/2.jpeg"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/3.png"/>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/4.jpeg"/>
-							</div>
-							<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
-								<img class="object-cover" src="img/projects/bank/5.png"/>
-							</div>
-							<!-- Next and previous buttons -->
-						 	<a class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
-						    <a class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
-							<div class="flex items-center justify-center pt-2">
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
-								<div class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer"></div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
 							</div>
 						</div>
-						<div class="px-6 pt-4 pb-3">
-							<div>
-								
-								<a 
-									href="https://github.com/ZurickBuita/Bank-Management-System.git"
-									target="_blank" 
-									class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
-									<span class="flex items-center text-sm">
-										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="size-5">
-										  <path d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
-										  <path d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
-										</svg>
-										Github
-									</span>
-								</a>
-							</div>
-							<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bank Management System</h3>
-							<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
-								A digital platform that streamlines banking operations, deposits, withdrawals, fast cash, balance inquiries, and transaction history, enhancing efficiency and user experience.
-							</p>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Java</span>
-							<span class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+					<div class="px-6 pt-4 pb-3">
+						<div>
+							<a href="https://github.com/ZurickBuita/OJT_project.git" target="_blank"
+								class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<span class="flex items-center text-sm">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+										class="size-5">
+										<path
+											d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+										<path
+											d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+									</svg>
+									Github
+								</span>
+							</a>
 						</div>
-					</article>
-				</div>
-			</section>
-			<!-- End Projects -->
+						<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bula Data
+							Management System</h3>
+						<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
+							The system is a digital platform that unifies diverse data from various offices, including
+							BFP, MDRRMO, PESO, and others, while also incorporating file attachments. This system
+							streamlines the collection of data and ensures accessibility even after natural calamities.
+						</p>
 
-			<!-- Start Contact -->
-			<section id="contact" class="lg:px-20 lg:pt-18 p-8 mb-2">
-				<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Laravel
+							Filament</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Tailwind</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+				</article>
+				<article data-aos="fade-in" data-aos-delay="300"
+					class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="carousel relative">
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/wms/1.jpg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/wms/2.jpeg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/wms/3.jpeg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/wms/4.jpeg" />
+						</div>
+						<!-- Next and previous buttons -->
+						<a
+							class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
+						<a
+							class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
+						<div class="flex items-center justify-center pt-2">
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+						</div>
+					</div>
+					<div class="px-6 pt-4 pb-3">
+						<div>
+							<a href="https://github.com/ZurickBuita/WMS-UPDATED.git" target="_blank"
+								class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<span class="flex items-center text-sm">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+										class="size-5">
+										<path
+											d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+										<path
+											d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+									</svg>
+									Github
+								</span>
+							</a>
+						</div>
+						<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">WMS-RFIVE</h3>
+						<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
+							A capstone project featuring an admin panel and user interface. This system was developed to
+							manage user data (faculty, students, technicians, and in-charges) and attendance records,
+							which are then used for door access via RFID and fingerprints.
+						</p>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">HTML</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">CSS</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">JavaScript</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">PHP</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Laravel</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Bootstrap</span>
+
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+				</article>
+				<article data-aos="fade-in" data-aos-delay="400"
+					class="bg-white dark:bg-gray-800 rounded-lg overflow-hidden ring shadow shadow-indigo-400 hover:shadow-md ring-gray-900/5">
+					<div class="carousel relative">
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/bank/1.jpeg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/bank/2.jpeg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/bank/3.png" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/bank/4.jpeg" />
+						</div>
+						<div class="mySlides md:h-50 lg:h-40 overflow-hidden">
+							<img class="object-cover" src="img/projects/bank/5.png" />
+						</div>
+						<!-- Next and previous buttons -->
+						<a
+							class="select-none carousel-prev inline-block absolute top-[35%] left-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10094;</a>
+						<a
+							class="select-none carousel-next inline-block absolute top-[35%] right-0 bg-indigo-500/15 hover:bg-indigo-700 p-2 text-white font-bold text-2xl cursor-pointer">&#10095;</a>
+						<div class="flex items-center justify-center pt-2">
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+							<div
+								class="dot ms-1 p-1 w-2 h-2 bg-indigo-500 dark:bg-indigo-800 hover:bg-indigo-800 dark:hover:bg-indigo-500 rounded-xl cursor-pointer">
+							</div>
+						</div>
+					</div>
+					<div class="px-6 pt-4 pb-3">
+						<div>
+
+							<a href="https://github.com/ZurickBuita/Bank-Management-System.git" target="_blank"
+								class="inline-block py-1 px-4 bg-indigo-700 hover:bg-indigo-600 text-gray-100 rounded">
+								<span class="flex items-center text-sm">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+										class="size-5">
+										<path
+											d="M12.232 4.232a2.5 2.5 0 0 1 3.536 3.536l-1.225 1.224a.75.75 0 0 0 1.061 1.06l1.224-1.224a4 4 0 0 0-5.656-5.656l-3 3a4 4 0 0 0 .225 5.865.75.75 0 0 0 .977-1.138 2.5 2.5 0 0 1-.142-3.667l3-3Z" />
+										<path
+											d="M11.603 7.963a.75.75 0 0 0-.977 1.138 2.5 2.5 0 0 1 .142 3.667l-3 3a2.5 2.5 0 0 1-3.536-3.536l1.225-1.224a.75.75 0 0 0-1.061-1.06l-1.224 1.224a4 4 0 1 0 5.656 5.656l3-3a4 4 0 0 0-.225-5.865Z" />
+									</svg>
+									Github
+								</span>
+							</a>
+						</div>
+						<h3 class="text-gray-900 dark:text-white text-base font-medium tracking-tight">Bank Management
+							System</h3>
+						<p class="text-gray-500 dark:text-gray-400 text-sm text-justify">
+							A digital platform that streamlines banking operations, deposits, withdrawals, fast cash,
+							balance inquiries, and transaction history, enhancing efficiency and user experience.
+						</p>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">Java</span>
+						<span
+							class="px-2 bg-indigo-700/20 rounded-xl ring ring-indigo-800/40 text-indigo-600 text-sm">MySQL</span>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- End Projects -->
+
+		<!-- Start Contact -->
+		<section id="contact" class="lg:px-20 lg:pt-18 p-8 mb-2">
+			<h1 data-aos="zoom-in" class="text-2xl md:text-4xl text-center p-2 font-bold text-gray-700
 				dark:text-gray-200">Get In <span class="text-indigo-700">Touch</span></h1>
-				<div data-aos="fade-in" data-aos-delay="500">
-					<p class="text-gray-600 dark:text-gray-400 text-center">
-					Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing new opportunities.
-					</p>
-				</div>
-				<div class="mt-5 grid grid-cols-1 md:grid-cols-2">
-					<article class="ring ring-gray-800/20 dark:ring-gray-200/20">
-						<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Contact Information</h1>
-						<div class="px-5 md:px-15 pb-5">
-							<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-								</svg>
-								<span>&nbsp;(+63) 9163447342</span>
-							</div>
-							<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-								</svg>
-								<span>&nbsp;zurickbuita@gmail.com</span>
-							</div>
-							<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
-								<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-								  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
-								</svg>
-								<span>&nbsp;Camarines Sur, Philippines</span>
-							</div>
-							<span class="mt-3 text-gray-600 dark:text-gray-300 font-semibold">Connect With Me</span>
-							<div class="flex items-center mt-2 mb-5">
-								<a 
-									data-aos="fade-in" 
-									data-aos-delay="100" 
-									href="https://www.instagram.com/zurickbuita?igsh=dThyeGtuNzMxMnlj"
-									target="_blank" 
-									class="block me-2 hover:scale-[1.1]"
-								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/instagram.png" alt="logo-icon"/>
-								</a>
-								<a 
-									data-aos="fade-in" 
-									data-aos-delay="200" 
-									href="https://www.facebook.com/zurick.buita" 
-									target="_blank" 
-									class="block me-2 hover:scale-[1.1]"
-								>
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png" alt="logo-icon"/>
-								</a>
-								<a 
-									data-aos="fade-in" 
-									data-aos-delay="300" 
-									href="https://t.me/zurickBuita"
-									target="_blank" 
-									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png" alt="logo-icon"/>
-								</a>
-								<a 
-									data-aos="fade-in" 
-									data-aos-delay="400" 
-									href="https://github.com/ZurickBuita" 
-									target="_blank" 
-									class="block me-2 hover:scale-[1.1]">
-									<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png" alt="logo-icon"/>
-								</a>
-							</div>
+			<div data-aos="fade-in" data-aos-delay="500">
+				<p class="text-gray-600 dark:text-gray-400 text-center">
+					Have a project in mind or want to collaborate? Feel free to reach out. I'm always open to discussing
+					new opportunities.
+				</p>
+			</div>
+			<div class="mt-5 grid grid-cols-1 md:grid-cols-2">
+				<article class="ring ring-gray-800/20 dark:ring-gray-200/20">
+					<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">
+						Contact Information</h1>
+					<div class="px-5 md:px-15 pb-5">
+						<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+							</svg>
+							<span>&nbsp;(+63) 9163447342</span>
 						</div>
-					</article>
-					<article class="bg-gray-200 dark:bg-gray-800 ring ring-gray-800/20 dark:ring-gray-200/20">
-						<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">Send a Message</h1>
-				        <form id="form" method="POST" name="contact" class="px-5 md:px-10 lg:px-15 pb-10 flex flex-col" data-netlify="true">
-				            <input 
-				                class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500" 
-				                type="email" 
-				                name="email" 
-				                placeholder="Enter your email address"
-				                required
-				            >
-				            
-				            <input 
-				                class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500" 
-				                type="text" 
-				                name="subject" 
-				                placeholder="What's this about?"
-				                required
-				            >
-				            
-				            <textarea 
-				                class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500 resize-none"  
-				                rows="5" 
-				                name="message"
-				                placeholder="Type your message here..."
-				                required
-				            ></textarea>
-				            <button 
-				                type="submit" 
-				                class="mt-5 py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-				            >
-				                Send Message
-				            </button>
-				        </form>
-					</article>
-				</div>
-			</section>
-			<!-- End Contact -->
+						<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+							</svg>
+							<span>&nbsp;zurickbuita@gmail.com</span>
+						</div>
+						<div class="mb-5 flex text-gray-600 dark:text-gray-300 font-semibold">
+							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+								stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+							</svg>
+							<span>&nbsp;Camarines Sur, Philippines</span>
+						</div>
+						<span class="mt-3 text-gray-600 dark:text-gray-300 font-semibold">Connect With Me</span>
+						<div class="flex items-center mt-2 mb-5">
+							<a data-aos="fade-in" data-aos-delay="100"
+								href="https://www.instagram.com/zurickbuita?igsh=dThyeGtuNzMxMnlj" target="_blank"
+								class="block me-2 hover:scale-[1.1]">
+								<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700"
+									src="img/hero/instagram.png" alt="logo-icon" />
+							</a>
+							<a data-aos="fade-in" data-aos-delay="200" href="https://www.facebook.com/zurick.buita"
+								target="_blank" class="block me-2 hover:scale-[1.1]">
+								<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/facebook.png"
+									alt="logo-icon" />
+							</a>
+							<a data-aos="fade-in" data-aos-delay="300" href="https://t.me/zurickBuita" target="_blank"
+								class="block me-2 hover:scale-[1.1]">
+								<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/telegram.png"
+									alt="logo-icon" />
+							</a>
+							<a data-aos="fade-in" data-aos-delay="400" href="https://github.com/ZurickBuita"
+								target="_blank" class="block me-2 hover:scale-[1.1]">
+								<img class="h-10 w-10 drop-shadow-lg drop-shadow-indigo-700" src="img/hero/github.png"
+									alt="logo-icon" />
+							</a>
+						</div>
+					</div>
+				</article>
+				<article class="bg-gray-200 dark:bg-gray-800 ring ring-gray-800/20 dark:ring-gray-200/20">
+					<h1 class="text-2xl md:text-4xl text-center my-4 p-2 font-bold text-gray-600 dark:text-gray-300">
+						Send a Message</h1>
+					<form id="form" method="POST" name="contact" class="px-5 md:px-10 lg:px-15 pb-10 flex flex-col"
+						data-netlify="true">
+						<input
+							class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500"
+							type="email" name="email" placeholder="Enter your email address" required>
 
-			<!-- Start Scroll Top -->
-			<button 
-				id="scrollIndicator" 
-				class="hidden ring ring-gray-800/50 p-3 bg-indigo-700 text-gray-50 rounded fixed bottom-6 right-8 duration-300 ease-in hover:scale-[1.1]"
-				onclick="scrollUp()">
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-				  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
-				  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
-				</svg>
-			</button>
-			
-			<!-- End Scroll Top -->
-		</main>
-		<!-- End Main -->
+						<input
+							class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500"
+							type="text" name="subject" placeholder="What's this about?" required>
 
-		<!-- Start Footer -->
-		<footer class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-center p-6 border-t border-gray-200 dark:border-gray-800">
-			<span>&copy;2025 Zurick Buita. All rights reserved.</span>
-		</footer>
-		<!-- End Footer -->
-		
-		<!-- Custom JS -->
-		<script src="script.js"></script>
-		<!-- SweetAlert 2 -->
-    	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-		<!-- AOS Animation script -->
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script>
-		  AOS.init({ 
-            offset: 100,
-            duration: 1000, 
-          });
-		</script>
-	</body>
+						<textarea
+							class="mt-3 py-2 px-4 bg-white dark:bg-gray-700 dark:text-white border border-gray-200 dark:border-gray-600 rounded-lg transition-all duration-200 focus:border-indigo-500 resize-none"
+							rows="5" name="message" placeholder="Type your message here..." required></textarea>
+						<button type="submit"
+							class="mt-5 py-3 px-6 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900">
+							Send Message
+						</button>
+					</form>
+				</article>
+			</div>
+		</section>
+		<!-- End Contact -->
+
+		<!-- Start Scroll Top -->
+		<button id="scrollIndicator"
+			class="hidden ring ring-gray-800/50 p-3 bg-indigo-700 text-gray-50 rounded fixed bottom-6 right-8 duration-300 ease-in hover:scale-[1.1]"
+			onclick="scrollUp()">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+				stroke="currentColor" class="size-6">
+				<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+				<path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+			</svg>
+		</button>
+
+		<!-- End Scroll Top -->
+	</main>
+	<!-- End Main -->
+
+	<!-- Start Footer -->
+	<footer
+		class="bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 text-center p-6 border-t border-gray-200 dark:border-gray-800">
+		<span>&copy;2025 Zurick Buita. All rights reserved.</span>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- Custom JS -->
+	<script src="script.js"></script>
+	<!-- SweetAlert 2 -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<!-- AOS Animation script -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 100,
+			duration: 1000,
+		});
+	</script>
+</body>
+
 </html>
